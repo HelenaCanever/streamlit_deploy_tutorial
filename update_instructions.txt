@@ -1,0 +1,8 @@
+# to update the app got to azure cloud shell 
+
+cd streamlit_deploy_tutorial/
+git pull
+az acr build --resource-group RG_TALAN-RECHERCHE --registry streamlit_deploy_reg --image streamlit_deploy_image .
+
+# the app will automatically update after a few minutes
+# you can also go to the TalanHopeUK web app resources page and "restart"
