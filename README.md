@@ -20,3 +20,4 @@
 
 Your app should be available after a couple of minutes at the web address you created!
 
+:exclamation: If you don't plan on modifying your app and it is heavy you can delete the Storage account once you are done. It is not required once the image is created and it can create extra costs.
