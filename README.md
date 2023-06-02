@@ -7,12 +7,12 @@
     - create a PAT on github at Setting > Developer Settings > Personal Access Tokens
     - in the Cloud Shell execute: `git clone https://<your account>:<your_pat>@github.com/<your account or organization>/<repo name>.git`
 
-3. Create a Container Registry in the RG_TALAN-RECHERCHE resource group (select the basic sku).
+3. Create a Container Registry in the <resource group name> resource group (select the basic sku).
     - in Settings > Access keys,  enable Admin user
 
 4. Build the docker image in the Container Registry:
     - if you are not already in your directory: `cd <repo name>`
-    - `az acr build --registry <container registry name> --resource-group RG_TALAN-RECHERCHE --image <image name of your choosing> . `
+    - `az acr build --registry <container registry name> --resource-group <resource group name> --image <image name of your choosing> . `
 
 5. If you don't have one already, create an App Service Plane. Choose the basic plan (B1: 1).
 
